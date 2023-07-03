@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
-<html lang="Pt-Br">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Minha Pizzaria</title>
-  <meta content="" name="description">
+  <title>Pizzaria</title>
+  <meta content="Pizzaria barata e gostosa" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
@@ -28,75 +29,73 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Yummy
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-  <?php include_once './config/constantes.php'  ?>
-  <?php include_once './config/conexao.php'  ?>
-  <?php include_once './func/funcoes.php'  ?>
 
-</head>
+    <?php 
+     include_once('./config/constantes.php'); 
+     include_once('./config/conexao.php'); 
+     include_once('./func/funcoes.php'); 
+     ?>
+
+
+
+
+</head>    
 
 <body>
 
   <!-- ======= Header ======= -->
-  <?php include_once 'header.php' ?>
+      <?php include_once('menu-top.php') ?>
   <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <?php include_once 'banner.php' ?>
+  <!-- ======= Hero Sectio n ======= -->
+      <?php include_once('banner.php')?>
   <!-- End Hero Section -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <?php include_once 'sobre.php' ?>
-    <!-- End About Section -->
+        <?php include_once('about.php')?>
+   <!-- End About Section -->
 
     <!-- ======= Why Us Section ======= -->
-    <?php include_once 'why.php' ?>
+        <?php include_once('why.php')?>
     <!-- End Why Us Section -->
 
-    <!-- ======= Stats Counter Section ======= -->
-    <?php include_once 'status.php' ?>
-    <!-- End Stats Counter Section -->
-
+    <?php include_once('stats.php')?>
+    
     <!-- ======= Menu Section ======= -->
-    <?php include_once 'menu.php' ?>
+        <?php include_once('menu-meio.php')?>
     <!-- End Menu Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <?php include_once 'avaliacao.php' ?>
+        <?php include_once('testimonials.php')?>
     <!-- End Testimonials Section -->
 
     <!-- ======= Events Section ======= -->
-    <?php include_once 'eventos.php' ?>
+        <?php include_once('events.php')?>
     <!-- End Events Section -->
 
     <!-- ======= Chefs Section ======= -->
-    <?php include_once 'chefes.php' ?>
+        <?php include_once('chefs.php')?>
     <!-- End Chefs Section -->
 
     <!-- ======= Book A Table Section ======= -->
-    <?php include_once 'reserva.php' ?>
+        <?php include_once('book-table.php')?>
     <!-- End Book A Table Section -->
 
     <!-- ======= Gallery Section ======= -->
-    <?php include_once 'galeria.php' ?>
+        <?php include_once('gallery.php')?>
     <!-- End Gallery Section -->
 
     <!-- ======= Contact Section ======= -->
-    <?php include_once 'contato.php' ?>
+        <?php include_once('contact.php')?>
     <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <?php include_once 'footer.php' ?>
+  <!-- End Footer -->
+  <?php include_once('footer.php')?>
   <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
