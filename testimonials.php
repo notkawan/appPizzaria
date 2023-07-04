@@ -2,40 +2,39 @@
 
 $listar = listarTodosRegistrosAtivo('cliente c
 INNER JOIN proficao p ON p.idproficao = c.idproficao
-RIGHT JOIN avaliacaocliente a ON a.idcliente = c.idcliente','c.nome, p.proficao,  a.descricao, img','c.ativo','A');
+RIGHT JOIN avaliacaocliente a ON a.idcliente = c.idcliente', 'c.nome, p.proficao,  a.descricao, img', 'c.ativo', 'A');
 
-if($listar == 'Vazio'){
-  
+if ($listar == 'Vazio') {
+
   echo '<h6 class=""> Nao foi possivel acessar seus dados! </h6>';
+} else {
 
-}else{
-                                                                                                     
 ?>
 
-<section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
+  <section id="testimonials" class="testimonials section-bg">
+    <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>What Are They <span>Saying About Us</span></p>
-        </div>
-
-
+      <div class="section-header">
+        <h2>Avaliações</h2>
+        <p>Veja os <span>comentários</span></p>
+      </div>
 
 
-        <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
 
-<?PHP
-  foreach($listar as $itemLinha){
-    $nome= $itemLinha->nome;
-    $proficao= $itemLinha->proficao;
-    $descricao= $itemLinha->descricao;
-    $img= $itemLinha->img;
-  
 
- 
-?>
+      <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <?PHP
+          foreach ($listar as $itemLinha) {
+            $nome = $itemLinha->nome;
+            $proficao = $itemLinha->proficao;
+            $descricao = $itemLinha->descricao;
+            $img = $itemLinha->img;
+
+
+
+          ?>
 
 
             <div class="swiper-slide">
@@ -61,17 +60,17 @@ if($listar == 'Vazio'){
                 </div>
               </div>
             </div><!-- End testimonial item -->
-<?PHP
-  }
-}
-?>
-           
+        <?PHP
+          }
+        }
+        ?>
 
-           
 
-          </div>
-          <div class="swiper-pagination"></div>
+
+
         </div>
-
+        <div class="swiper-pagination"></div>
       </div>
-    </section>
+
+    </div>
+  </section>

@@ -2,8 +2,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Contact</h2>
-          <p>Need Help? <span>Contact Us</span></p>
+          <h2>Contatos</h2>
+          <p>Precisa de ajuda? <span>Contate a gente</span></p>
         </div>
 
         <div class="mb-3">
@@ -16,7 +16,7 @@
             <div class="info-item  d-flex align-items-center">
               <i class="icon bi bi-map flex-shrink-0"></i>
               <div>
-                <h3>Our Address</h3>
+                <h3>Nosso endereço</h3>
                 <p>A108 Adam Street, New York, NY 535022</p>
               </div>
             </div>
@@ -26,7 +26,7 @@
             <div class="info-item d-flex align-items-center">
               <i class="icon bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>Email Us</h3>
+                <h3>Email</h3>
                 <p>contact@example.com</p>
               </div>
             </div>
@@ -36,8 +36,8 @@
             <div class="info-item  d-flex align-items-center">
               <i class="icon bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <h3>Número</h3>
+                <p>+55 33 998076634</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -46,9 +46,9 @@
             <div class="info-item  d-flex align-items-center">
               <i class="icon bi bi-share flex-shrink-0"></i>
               <div>
-                <h3>Opening Hours</h3>
-                <div><strong>Mon-Sat:</strong> 11AM - 23PM;
-                  <strong>Sunday:</strong> Closed
+                <h3>Abrimos</h3>
+                <div><strong>Seg - Sex:</strong> 11AM - 23PM;
+                  <strong>Sábado:</strong> Fechado
                 </div>
               </div>
             </div>
