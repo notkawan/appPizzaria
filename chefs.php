@@ -17,8 +17,8 @@ if($listar == 'Vazio'){
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Chefs</h2>
-          <p>Os <span>Melhores</span>Proficionais</p>
+          <h2>Chefes</h2>
+          <p>Os <span>Melhores da </span>Yummy</p>
         </div>
 
         <div class="row gy-4">

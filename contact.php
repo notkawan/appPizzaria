@@ -72,11 +72,11 @@
             <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
           </div>
           <div class="my-3">
-            <div class="loading">Loading</div>
+            <div class="loading">Carregado</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
+            <div class="sent-message">Mensagem enviada!</div>
           </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          <div class="text-center"><button type="submit">Enviar</button></div>
         </form><!--End Contact Form -->
 
       </div>

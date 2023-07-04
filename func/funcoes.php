@@ -114,6 +114,3 @@ function listarRegistrosUmParamentro($tabela, $campos, $idcampo,  $idparametro, 
                     return 'vazio';
                 }
     }
-
-
-?>
