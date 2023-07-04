@@ -29,10 +29,8 @@
 
           <div class="col-lg-8 d-flex align-items-center">
             <div class="row gy-4">
-
           
 <?php
-   
   foreach($listar as $itemLinha){      
       $titulo = $itemLinha->titulo;       
       $text = $itemLinha->text;       
