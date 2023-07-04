@@ -103,4 +103,17 @@ function listarRegistrosUmParamentro($tabela, $campos, $idcampo,  $idparametro, 
 
     }
 
+    function inserirnalista($tabela,$campos,$valores) 
+    {
+            $conn = conectar();
+            $lista = $conn->prepare("INSERT INTO $tabela($campos) Values ($valores)");
+            $lista->execute();
+        if($lista->rowCount() > 0) {
+            return 'cadastrado';
+                } else {
+                    return 'vazio';
+                }
+    }
+
+
 ?>

@@ -15,7 +15,7 @@ foreach ($retornoMenu as $retorno) {
     ?>
           <li class="nav-item">
             <a class="nav-link <?php if ($conta == 0) {?>active show<?php }?>" data-bs-toggle="tab" data-bs-target="#menu<?php echo $nomeMenu ?>">
-              <h4><?php echo $nomeMenu . 'count' ?></h4>
+              <h4><?php echo $nomeMenu  ?></h4>
             </a>
             <?php $conta++;}?>
     </ul>
@@ -49,10 +49,10 @@ foreach ($lista1 as $lista) {
         $preco = $retornoProdCardapioItem->valor;
         ?>
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+                <a href="<?php echo $img ?>" class="glightbox"><img src="<?php echo $img ?>" class="menu-img img-fluid" alt=""></a>
                 <h4><?php echo $nomePrato ?></h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                <?php echo $descricao ?>
                 </p>
                 <p class="price">
                   R$ <?php echo $preco ?>

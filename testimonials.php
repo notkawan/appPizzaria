@@ -2,7 +2,7 @@
 
 $listar = listarTodosRegistrosAtivo('cliente c
 INNER JOIN proficao p ON p.idproficao = c.idproficao
-RIGHT JOIN avaliacaocliente a ON a.idcliente = c.idcliente','c.nome, p.proficao,  a.descricao','c.ativo','A');
+RIGHT JOIN avaliacaocliente a ON a.idcliente = c.idcliente','c.nome, p.proficao,  a.descricao, img','c.ativo','A');
 
 if($listar == 'Vazio'){
   
@@ -31,7 +31,7 @@ if($listar == 'Vazio'){
     $nome= $itemLinha->nome;
     $proficao= $itemLinha->proficao;
     $descricao= $itemLinha->descricao;
- 
+    $img= $itemLinha->img;
   
 
  
@@ -56,7 +56,7 @@ if($listar == 'Vazio'){
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="<?php echo $img ?>" class="img-fluid testimonial-img" alt="">
                   </div>
                 </div>
               </div>
